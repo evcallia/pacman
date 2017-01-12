@@ -1,0 +1,76 @@
+.pacman{
+    background-image: url('images/pacman.gif');
+    background-size: cover;
+}
+.right{
+    transform: rotate(0deg);
+}
+.left{
+    transform: rotate(180deg);
+}
+.up{
+    transform: rotate(-90deg);
+}
+.down{
+    transform: rotate(90deg);
+}
+.brick{
+    background-color: blue;
+}
+.coin{
+    background-image: url('images/coin.png');
+    background-size: 8px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.empty{
+    /*Empty square*/
+}
+.cherry{
+    background-image: url('images/cherry.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ghost{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.red_ghost{
+    background-image: url('images/red_ghost.png');
+}
+.blue_ghost{
+    background-image: url('images/blue_ghost.png');
+}
+.pink_ghost{
+    background-image: url('images/pink_ghost.png');
+}
+.pacman, .brick, .coin, .empty, .cherry, .ghost{
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+}
+body{
+    background-color: black;
+    font-size: 0px;
+}
+#game_board{
+    margin: auto;
+    width: 520px;
+    margin-top: 10%;
+}
+#score{
+    color: white;
+    position: absolute;
+    top: 30px;
+    left: 60px;
+    font-size: 30px;
+}
+#lives{
+    color: white;
+    position: absolute;
+    top: 30px;
+    right: 60px;
+    font-size: 30px;
+}
